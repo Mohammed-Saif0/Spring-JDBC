@@ -12,7 +12,11 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
         StudentDaoImpl stu = context.getBean("studentImp",StudentDaoImpl.class);
-        int res = stu.insert(new Student(10,"bommai","Karnataka"));
-        System.out.println(res);
+//        int res = stu.insert(new Student(10,"bommai","Karnataka"));
+//        int res1 = stu.update(new Student(10,"YadurAppa","Kolar"));
+//        int res = stu.delete(10);
+//        System.out.println(res);
+        
+         
     }
 }
