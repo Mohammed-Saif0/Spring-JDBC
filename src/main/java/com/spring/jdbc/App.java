@@ -1,5 +1,7 @@
 package com.spring.jdbc;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,7 +18,10 @@ public class App
 //        int res1 = stu.update(new Student(10,"YadurAppa","Kolar"));
 //        int res = stu.delete(10);
 //        System.out.println(res);
+//        Student student = stu.getStudent(1);
+//        System.out.println(student);
         
-         
+        List<Student> student = stu.getAllStudent();
+        System.out.println(student);
     }
 }
